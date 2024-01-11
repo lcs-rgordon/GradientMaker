@@ -9,23 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @Binding var showInspector: Bool
+    // MARK: Computed properties
+    @State var startingColor: Color = .red
+    @State var endingColor: Color = .blue
     
+    // MARK: Stored properties
     var body: some View {
+        
+        let selectedGradient = Gradient(colors: [startingColor, endingColor])
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            LinearGradient(gradient: selectedGradient, startPoint: .leading, endPoint: .trailing)
+            
+            HStack {
+                ColorPicker("Starting Color", selection: $startingColor)
+                
+                ColorPicker("Ending Color", selection: $endingColor)
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
 #Preview {
-    ContentView(showInspector: .constant(true))
-        .inspector(isPresented: .constant(true)) {
-            InspectorView()
-        }
-
+    ContentView()
 }
