@@ -55,8 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				81AA84FF2B50990A002F5025 /* GradientMakerApp.swift */,
-				81AA85012B50990A002F5025 /* ContentView.swift */,
-				81AA850E2B5099A5002F5025 /* InspectorView.swift */,
+				81AA85112B509A8B002F5025 /* Model */,
+				81AA85102B509A78002F5025 /* Views */,
 				81AA85032B50990C002F5025 /* Assets.xcassets */,
 				81AA85082B50990C002F5025 /* GradientMaker.entitlements */,
 				81AA85052B50990C002F5025 /* Preview Content */,
@@ -70,6 +70,22 @@
 				81AA85062B50990C002F5025 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81AA85102B509A78002F5025 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				81AA85012B50990A002F5025 /* ContentView.swift */,
+				81AA850E2B5099A5002F5025 /* InspectorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		81AA85112B509A8B002F5025 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
