@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct GradientMakerApp: App {
+    
+    @State var showInspector = true
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(showInspector: $showInspector)
+                .inspector(isPresented: $showInspector) {
+                    InspectorView()
+                }
         }
     }
 }

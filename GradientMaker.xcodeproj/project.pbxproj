@@ -11,6 +11,7 @@
 		81AA85022B50990A002F5025 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AA85012B50990A002F5025 /* ContentView.swift */; };
 		81AA85042B50990C002F5025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81AA85032B50990C002F5025 /* Assets.xcassets */; };
 		81AA85072B50990C002F5025 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81AA85062B50990C002F5025 /* Preview Assets.xcassets */; };
+		81AA850F2B5099A5002F5025 /* InspectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AA850E2B5099A5002F5025 /* InspectorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		81AA85032B50990C002F5025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81AA85062B50990C002F5025 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81AA85082B50990C002F5025 /* GradientMaker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GradientMaker.entitlements; sourceTree = "<group>"; };
+		81AA850E2B5099A5002F5025 /* InspectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				81AA84FF2B50990A002F5025 /* GradientMakerApp.swift */,
 				81AA85012B50990A002F5025 /* ContentView.swift */,
+				81AA850E2B5099A5002F5025 /* InspectorView.swift */,
 				81AA85032B50990C002F5025 /* Assets.xcassets */,
 				81AA85082B50990C002F5025 /* GradientMaker.entitlements */,
 				81AA85052B50990C002F5025 /* Preview Content */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81AA850F2B5099A5002F5025 /* InspectorView.swift in Sources */,
 				81AA85022B50990A002F5025 /* ContentView.swift in Sources */,
 				81AA85002B50990A002F5025 /* GradientMakerApp.swift in Sources */,
 			);

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @Binding var showInspector: Bool
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -20,5 +23,9 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ContentView(showInspector: .constant(true))
+        .inspector(isPresented: .constant(true)) {
+            InspectorView()
+        }
+
 }
